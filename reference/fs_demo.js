@@ -8,11 +8,36 @@ const path = require('path');
 // 	console.log('Folder created...');
 // });
 //Create and write to file (needed to comment out fs.mkdir for it to work)
-fs.writeFile(
-	path.join(__dirname, 'test', 'hello.txt'),
-	'Well, here I am, world',
-	err => {
+// fs.writeFile(
+// 	path.join(__dirname, 'test', 'hello.txt'),
+// 	'Well, here I am, world',
+// 	err => {
+// 		if (err) throw err;
+// 		console.log('File written to...');
+// 		//add additional text
+// 		fs.appendFile(
+// 			path.join(__dirname, 'test', 'hello.txt'),
+// 			' I would love to learn Node.js',
+// 			err => {
+// 				if (err) throw err;
+// 				console.log('File written to...');
+// 			}
+// 		);
+// 	}
+// );
+//Read a file
+// fs.readFile(path.join(__dirname, '/test', 'hello.txt'), 'utf8', (err, data) => {
+// 	if (err) throw err;
+// 	console.log(data);
+// });
+
+//Rename a file
+
+fs.rename(
+	path.join(__dirname, '/test', 'hello.txt'),
+	path.join(__dirname, '/test', 'helloPeople.txt'),
+	(err, data) => {
 		if (err) throw err;
-		console.log('File written to...');
+		console.log('File renamed...');
 	}
 );
