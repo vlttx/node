@@ -1,4 +1,5 @@
 const person = require('./person');
+
 const Cat = require('./cat');
 
 console.log(person);

@@ -10,5 +10,5 @@ class Cat {
 		);
 	}
 }
-
+console.log(__dirname, __filename); // we have access to Module Wrapper Function that has exports, require, module, __filename and __dirname)
 module.exports = Cat;
