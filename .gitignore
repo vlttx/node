@@ -1,5 +1,8 @@
 /node_modules
-
+reference
+logger.js
+person.js
+cat.js
 
 # production
 /build
